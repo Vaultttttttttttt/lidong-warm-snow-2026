@@ -28,15 +28,19 @@
     .hill{position:absolute;left:-10%;bottom:-19%;width:125%;height:46%;border-radius:52% 42% 0 0/55% 55% 0 0;background:linear-gradient(175deg,#f9fdff 0%,#e6f0f5 32%,#a9c2d2 100%);transform:rotate(-3deg);box-shadow:0 -20px 90px #e1eff45c}.hill:after{content:"";position:absolute;left:-4%;top:14%;width:110%;height:88%;border-radius:50% 50% 0 0;background:linear-gradient(173deg,#f7fbfd,#c6dae5);transform:rotate(8deg) translateY(28%)}
     .grain{position:absolute;inset:0;pointer-events:none;z-index:8;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E")}
     .snow{position:absolute;inset:0;pointer-events:none;z-index:6}.flake{position:absolute;top:-20px;width:var(--size);height:var(--size);border-radius:50%;background:#f5fbff;opacity:var(--opacity);filter:blur(var(--blur));animation:fall var(--duration) linear infinite;animation-delay:var(--delay)}@keyframes fall{to{transform:translate3d(var(--drift),105vh,0)}}
-    .content{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;text-align:center;pointer-events:none;padding:clamp(32px,7vh,76px) 20px 28px}.eyebrow{margin:0 0 18px;letter-spacing:.45em;font-size:11px;font-weight:600;color:#f4e6c9;text-transform:uppercase;text-shadow:0 2px 12px #14253a}.winter-greeting{margin:0 0 10px;font-family:"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:clamp(20px,2.6vw,30px);font-weight:400;letter-spacing:.36em;text-indent:.36em;color:#f8e7bd;text-shadow:0 2px 18px #172b44}.title{margin:0;font-family:"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:clamp(42px,7vw,86px);font-weight:400;letter-spacing:.13em;text-indent:.13em;line-height:1.25;text-shadow:0 4px 26px #0a1d3380}.subtitle{margin:16px 0 0;color:#e8eff5;font-size:clamp(13px,1.5vw,17px);letter-spacing:.22em;text-shadow:0 2px 12px #14253a}.bottom{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:15px;pointer-events:auto}.note{margin:0;color:#3b5870;font-size:12px;letter-spacing:.18em}.replay{border:1px solid #45637a;background:#17364eeb;color:#f7f4ed;border-radius:99px;padding:12px 26px;box-shadow:0 10px 30px #3358723d;cursor:pointer;letter-spacing:.18em;transition:transform .2s,background .2s}.replay:hover{transform:translateY(-3px);background:#284d68}.replay:focus-visible{outline:3px solid #f4dbab;outline-offset:4px}
+    .content{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;text-align:center;pointer-events:none;padding:clamp(32px,7vh,76px) 20px 28px}.eyebrow{margin:0 0 18px;letter-spacing:.45em;font-size:11px;font-weight:600;color:#f4e6c9;text-transform:uppercase;text-shadow:0 2px 12px #14253a}.title{margin:0;font-family:"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:clamp(42px,7vw,86px);font-weight:400;letter-spacing:.13em;text-indent:.13em;line-height:1.25;text-shadow:0 4px 26px #0a1d3380}.subtitle{margin:16px 0 0;color:#e8eff5;font-size:clamp(13px,1.5vw,17px);letter-spacing:.22em;text-shadow:0 2px 12px #14253a}.bottom{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:15px;pointer-events:auto}.note{margin:0;color:#3b5870;font-size:12px;letter-spacing:.18em}.replay{border:1px solid #45637a;background:#17364eeb;color:#f7f4ed;border-radius:99px;padding:12px 26px;box-shadow:0 10px 30px #3358723d;cursor:pointer;letter-spacing:.18em;transition:transform .2s,background .2s}.replay:hover{transform:translateY(-3px);background:#284d68}.replay:focus-visible{outline:3px solid #f4dbab;outline-offset:4px}
     .messages{position:absolute;inset:0;z-index:4;pointer-events:none}.message{position:absolute;left:var(--x);top:var(--y);max-width:min(420px,72vw);padding:10px 17px;border:1px solid #ffffff70;border-radius:18px 18px 18px 4px;background:#f7fbf0e8;color:#29485e;font-size:clamp(12px,1.25vw,16px);line-height:1.5;letter-spacing:.06em;white-space:normal;overflow-wrap:anywhere;text-align:center;box-shadow:0 8px 28px #122b4870,0 0 25px #f8e9c166;backdrop-filter:blur(8px);transform:translate(-50%,-50%) scale(.4) rotate(var(--tilt));opacity:0;animation:appear 6.6s ease-in-out forwards}.message:nth-child(3n){background:#e6f1f5e8}.message:nth-child(5n){background:#fff0dce8}.message::before{content:attr(data-icon);color:#bd9a65;margin-right:8px;font-size:16px;vertical-align:-1px}@keyframes appear{0%{opacity:0;transform:translate(-50%,-20%) scale(.45) rotate(var(--tilt))}12%,70%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(var(--tilt))}100%{opacity:0;transform:translate(-50%,-95%) scale(.96) rotate(var(--tilt))}}
     .fireworks,.flowers{position:absolute;inset:0;overflow:hidden;pointer-events:none}.fireworks{z-index:6}.flowers{z-index:7}
     .burst{position:absolute;width:0;height:0;filter:drop-shadow(0 0 10px var(--glow))}.burst::before,.burst::after{content:"";position:absolute;left:0;top:0;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}.burst::before{width:20px;height:20px;background:radial-gradient(circle,#fff 0%,var(--glow) 25%,transparent 72%);animation:burstFlash .65s ease-out forwards}.burst::after{width:22px;height:22px;border:2.5px solid var(--glow);box-shadow:0 0 18px var(--glow);animation:burstRing 1s ease-out forwards}.spark{position:absolute;left:0;top:0;line-height:1;color:var(--color);font-size:var(--size);text-shadow:0 0 10px currentColor,0 0 20px currentColor;white-space:nowrap;animation:sparkFly 1.35s cubic-bezier(.16,.65,.25,1) var(--delay) forwards;opacity:0;will-change:transform,opacity}
     @keyframes burstFlash{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}22%{opacity:1}100%{opacity:0;transform:translate(-50%,-50%) scale(3)}}@keyframes burstRing{0%{opacity:.9;transform:translate(-50%,-50%) scale(.2)}100%{opacity:0;transform:translate(-50%,-50%) scale(5)}}@keyframes sparkFly{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0deg)}14%,62%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(.65) rotate(var(--spin))}}
     .flower{position:absolute;width:var(--flower-size);aspect-ratio:1;filter:drop-shadow(0 5px 5px #1b3d5e88);transform:translate(-50%,-100%);animation:flowerFall 1.7s cubic-bezier(.18,.7,.24,1) both;will-change:transform,opacity}.flower svg{display:block;width:100%;height:100%}.flower.fade{animation:flowerFade .8s ease-in forwards}@keyframes flowerFall{0%{opacity:0;transform:translate(calc(-50% + var(--from-x)),calc(-100% + var(--from-y))) rotate(-35deg) scale(.45)}16%{opacity:1}72%{opacity:1;transform:translate(calc(-50% + 9px),calc(-100% - 18px)) rotate(12deg) scale(1.03)}100%{opacity:1;transform:translate(-50%,-100%) rotate(0deg) scale(1)}}@keyframes flowerFade{to{opacity:0;transform:translate(-50%,-106%) scale(.8)}}
+    [hidden]{display:none!important}
+    .letter-overlay{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:18px;background:#071626b8;backdrop-filter:blur(9px);animation:overlayIn .4s ease-out}.letter-stage{text-align:center;color:#fff7e9;animation:letterArrive .65s cubic-bezier(.2,.7,.2,1) both}.letter-stage p{margin:22px 0 0;letter-spacing:.22em;font-size:13px;text-shadow:0 2px 12px #071626}.envelope{position:relative;display:block;width:min(340px,78vw);aspect-ratio:1.48;margin:auto;border:1px solid #fff8e3;border-radius:12px;background:linear-gradient(145deg,#f2dcc0,#d5b894);box-shadow:0 22px 60px #071626bb,0 0 35px #ffe8bb65;cursor:pointer;overflow:hidden;transition:transform .25s,box-shadow .25s}.envelope:hover{transform:translateY(-7px) rotate(-2deg);box-shadow:0 30px 70px #071626cc,0 0 45px #ffe8bb8c}.envelope:focus-visible,.letter-close:focus-visible{outline:3px solid #fff4c5;outline-offset:5px}.envelope::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(145deg,#fff4dc,#dfc5a4);clip-path:polygon(0 0,100% 0,50% 57%);filter:drop-shadow(0 5px 4px #9d7859)}.envelope::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(145deg,#f5e4ca,#d4b58f);clip-path:polygon(0 100%,50% 43%,100% 100%)}.envelope-seal{position:absolute;left:50%;top:54%;z-index:3;display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:#ad5d72;color:#fff6e7;font-size:28px;box-shadow:0 4px 15px #6a3b47a0;transform:translate(-50%,-50%)}.letter-close{position:absolute;right:clamp(18px,4vw,42px);top:clamp(18px,4vw,42px);z-index:3;width:42px;height:42px;border:1px solid #ffffff88;border-radius:50%;background:#142b42b5;color:#fff;font-size:25px;line-height:1;cursor:pointer}
+    .letter-paper{position:relative;width:min(720px,94vw);max-height:84svh;overflow:auto;padding:clamp(26px,5vw,50px);border:1px solid #fff8e9;border-radius:20px;background:linear-gradient(145deg,#fffcf4,#f8efdf);color:#34485b;box-shadow:0 25px 80px #061322bd,0 0 35px #f6dcb97a;animation:letterUnfold .55s cubic-bezier(.2,.7,.2,1) both}.letter-paper::before{content:"✦  ✧  ✦";display:block;margin-bottom:12px;color:#bc9c72;letter-spacing:.35em;text-align:center;font-size:13px}.letter-overline{margin:0 0 28px;color:#977e6a;font-size:12px;letter-spacing:.35em;text-align:center}.letter-message{margin:clamp(32px,7vh,72px) 0;color:#31475b;font-family:"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:clamp(25px,5vw,38px);line-height:1.75;text-align:center}.letter-signature{margin:40px 0 8px;color:#7a6370;font-family:"Songti SC","Noto Serif CJK SC","STSong",serif;font-size:20px;text-align:right}.letter-signature::before{content:"—— ";color:#b9a0a4}.photo-gallery{columns:2;column-gap:12px;text-align:left}.photo-gallery figure{break-inside:avoid;margin:0 0 12px;padding:6px;background:#fff;border:1px solid #eee6db;box-shadow:0 5px 18px #33495a24;transform:rotate(var(--photo-tilt))}.photo-gallery img{display:block;width:100%;height:auto;border-radius:2px}.photo-gallery figure:nth-child(3n+1){--photo-tilt:-1.3deg}.photo-gallery figure:nth-child(3n+2){--photo-tilt:1.1deg}.photo-gallery figure:nth-child(3n){--photo-tilt:-.4deg}
+    @keyframes overlayIn{from{opacity:0}to{opacity:1}}@keyframes letterArrive{from{opacity:0;transform:translateY(40px) scale(.8) rotate(-7deg)}to{opacity:1;transform:translateY(0) scale(1) rotate(0)}}@keyframes letterUnfold{from{opacity:0;transform:translateY(32px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}
     .prompt{position:absolute;z-index:7;left:50%;top:55%;transform:translate(-50%,-50%);font-family:"Songti SC","STSong",serif;font-size:clamp(18px,2.4vw,28px);letter-spacing:.22em;text-indent:.22em;color:#fff9e9;text-shadow:0 2px 15px #14253a;text-align:center;white-space:nowrap;transition:opacity 1.5s}.prompt.hide{opacity:0}
     .star{position:absolute;z-index:2;color:#e7f1f9;font-size:16px;text-shadow:0 0 12px #fff;opacity:.55;animation:twinkle 4s ease-in-out infinite alternate}@keyframes twinkle{to{opacity:.15;transform:scale(.65)}}
-    @media(max-width:700px){.scene{min-height:0}.content{padding-top:8vh}.moon{width:74px;right:10%;top:27%}.title{font-size:clamp(38px,9vw,58px)}.subtitle{font-size:12px;letter-spacing:.13em}.message{max-width:78vw;font-size:13px;padding:9px 12px}.note{color:#345269}.hill{bottom:-15%;height:38%}.mountain{bottom:16%}.prompt{top:50%;font-size:18px}.bottom{padding-bottom:3vh}}
+    @media(max-width:700px){.scene{min-height:0}.content{padding-top:8vh}.moon{width:74px;right:10%;top:27%}.title{font-size:clamp(38px,9vw,58px)}.subtitle{font-size:12px;letter-spacing:.13em}.message{max-width:78vw;font-size:13px;padding:9px 12px}.note{color:#345269}.hill{bottom:-15%;height:38%}.mountain{bottom:16%}.prompt{top:50%;font-size:18px}.bottom{padding-bottom:3vh}.letter-paper{max-height:82svh;padding:28px 18px}.letter-message{margin:34px 0}.photo-gallery{column-gap:8px}.photo-gallery figure{margin-bottom:8px;padding:4px}}
     @media(prefers-reduced-motion:reduce){.flake,.star{animation:none}.message{animation-duration:8s}.fireworks{display:none}.flower{animation-duration:.01ms}.flower.fade{animation-duration:.01ms}.replay{transition:none}}
   </style>
 </head>
@@ -46,11 +50,22 @@
     <div class="mountain back" aria-hidden="true"></div><div class="mountain" aria-hidden="true"></div><div class="hill" aria-hidden="true"></div>
     <div class="snow" id="snow" aria-hidden="true"></div><div class="messages" id="messages" aria-hidden="true"></div><div class="fireworks" id="fireworks" aria-hidden="true"></div><div class="flowers" id="flowers" aria-hidden="true"></div>
     <p class="prompt" id="prompt">有些话，想在下雪时告诉你</p>
-    <div class="content"><p class="eyebrow">A LITTLE WARMTH FOR YOU</p><p class="winter-greeting">立冬快乐</p><h1 class="title">立冬快乐逸冉！</h1><p class="subtitle">愿你在每一个寒冷的日子里，都被温柔惦记</p><div class="bottom"><button class="replay" id="replay" type="button">再下一场温柔的雪 ↗</button><p class="note">轻点雪地，也会有新的话出现</p></div></div>
+    <div class="content"><p class="eyebrow">A LITTLE WARMTH FOR YOU</p><h1 class="title">立冬快乐逸冉！</h1><p class="subtitle">愿你在每一个寒冷的日子里，都被温柔惦记</p><div class="bottom"><button class="replay" id="replay" type="button">再下一场温柔的雪 ↗</button><p class="note">轻点雪地，更多祝福和惊喜会出现</p></div></div>
     <div class="grain" aria-hidden="true"></div>
   </main>
+  <div class="letter-overlay" id="letterOverlay" role="dialog" aria-modal="true" aria-label="给逸冉的一封信" hidden>
+    <button class="letter-close" id="closeLetter" type="button" aria-label="关闭信封">×</button>
+    <div class="letter-stage" id="letterStage">
+      <button class="envelope" id="openEnvelope" type="button" aria-label="打开信封"><span class="envelope-seal" aria-hidden="true">✉</span></button>
+      <p>一封写给逸冉的信 · 点开看看</p>
+    </div>
+    <article class="letter-paper" id="letterPaper" hidden>
+      <p class="letter-overline">A LETTER FOR YIRAN</p>
+      <div id="letterContent"></div>
+    </article>
+  </div>
   <script>
-    const phrases=["立冬快乐，好运开场","今天也有新的好事发生","愿你每天都有小惊喜","你的笑容让冬天发光","一步一步，走向喜欢的生活","你认真生活的样子很耀眼","今天的你也很棒","愿热爱与好运常伴你左右","你的每份努力都有意义","把今天过得热气腾腾","愿你心里有光，脚下有路","这场雪替我送来好消息","愿你被快乐轻轻包围","你的勇气比想象中更多","新的季节，新的好心情","有你的日子更明亮","愿你把喜欢的事做得闪闪发光","每一次出发都值得喝彩","未来的惊喜正在路上","你的善良会遇见温柔","愿你常常遇见可爱的人和事","今天适合拥抱小确幸","你的小进步都值得庆祝","把笑容交给今天吧","好事会在不经意间出现","愿你遇见更好的风景","你的光芒不会被冬天藏住","生活正慢慢变成喜欢的模样","愿你日日有期待","认真生活的你最动人","让好运像雪花一样落下来","愿你一抬头就看见晴朗","今天也要满怀期待呀","喜欢的事值得慢慢去做","愿你身边总有暖意","这个冬天会有很多好消息","每天都能找到开心的理由","你值得拥有明媚的日子","愿你的快乐有迹可循","愿你收获满满的喜欢","今天也想把好运分给你","从现在开始，好事连连","愿你一直勇敢又自由","你的存在就是一份美好","冬天来了，快乐也来了","愿你一路繁花，一路晴天","这个冬天有甜甜的惊喜","愿你的每一天都闪闪发亮","等雪停，我们一起看太阳","喜欢的生活正在向你靠近","你比昨天又前进了一点点","愿你走到哪里都带着笑","每个新早晨都值得期待","今天的阳光也为你而来","愿你心想事成，平安喜乐","把好心情装进口袋里","愿你眼里有星光，心中有方向","新的一天，继续闪闪发光","愿所有美好都如期而至","你笑起来，世界就亮一点","Good luck forever","永远快乐永远快乐永远快乐永远快乐永远快乐永远快乐","暴富暴富暴富暴富暴富暴富暴富","晚安，做个甜甜的梦","好运好运好运好运好运好运","开心开心开心开心开心开心","心想事成心想事成心想事成","今天也要闪闪发光呀"];
+    const phrases=["立冬快乐，好运开场","今天也有新的好事发生","愿你每天都有小惊喜","你的笑容让冬天发光","一步一步，走向喜欢的生活","你认真生活的样子很耀眼","今天的你也很棒","愿热爱与好运常伴你左右","你的每份努力都有意义","把今天过得热气腾腾","愿你心里有光，脚下有路","这场雪替我送来好消息","愿你被快乐轻轻包围","你的勇气比想象中更多","新的季节，新的好心情","有你的日子更明亮","愿你把喜欢的事做得闪闪发光","每一次出发都值得喝彩","未来的惊喜正在路上","你的善良会遇见温柔","愿你常常遇见可爱的人和事","今天适合拥抱小确幸","你的小进步都值得庆祝","把笑容交给今天吧","好事会在不经意间出现","愿你遇见更好的风景","你的光芒不会被冬天藏住","生活正慢慢变成喜欢的模样","愿你日日有期待","认真生活的你最动人","让好运像雪花一样落下来","愿你一抬头就看见晴朗","今天也要满怀期待呀","喜欢的事值得慢慢去做","愿你身边总有暖意","这个冬天会有很多好消息","每天都能找到开心的理由","你值得拥有明媚的日子","愿你的快乐有迹可循","愿你收获满满的喜欢","今天也想把好运分给你","从现在开始，好事连连","愿你一直勇敢又自由","你的存在就是一份美好","冬天来了，快乐也来了","愿你一路繁花，一路晴天","这个冬天有甜甜的惊喜","愿你的每一天都闪闪发亮","等雪停，我们一起看太阳","喜欢的生活正在向你靠近","你比昨天又前进了一点点","愿你走到哪里都带着笑","每个新早晨都值得期待","今天的阳光也为你而来","愿你心想事成，平安喜乐","把好心情装进口袋里","愿你眼里有星光，心中有方向","新的一天，继续闪闪发光","愿所有美好都如期而至","你笑起来，世界就亮一点","Good luck forever","永远快乐永远快乐永远快乐永远快乐永远快乐永远快乐","暴富暴富暴富暴富暴富暴富暴富","晚安，做个甜甜的梦","好运好运好运好运好运好运","开心开心开心开心开心开心","心想事成心想事成心想事成","今天也要闪闪发光呀","CCF B！","CCF A！","AILab录取通知书"];
     const icons=["🎁","🥳","💄","🦢","👜","🕊️","🍰","💒","🔮","🚬","🎇","🎆","🌠","🌌","🧧","💌","💝","💘","💖","㊗️","🀪","☻","✦"];
     const snow=document.getElementById('snow'),messages=document.getElementById('messages'),fireworks=document.getElementById('fireworks'),flowers=document.getElementById('flowers'),prompt=document.getElementById('prompt'),scene=document.getElementById('scene');
     for(let i=0;i<95;i++){const f=document.createElement('i');f.className='flake';f.style.cssText=`left:${Math.random()*100}%;--size:${(Math.random()*4+2).toFixed(1)}px;--opacity:${(Math.random()*.55+.25).toFixed(2)};--blur:${Math.random()>.75?'1px':'0px'};--duration:${(Math.random()*12+9).toFixed(1)}s;--delay:${(-Math.random()*20).toFixed(1)}s;--drift:${(Math.random()*130-65).toFixed(0)}px`;snow.appendChild(f)}
@@ -126,7 +141,60 @@
     }
     function showPhrase(){let n=Math.floor(Math.random()*phrases.length);if(n===last)n=(n+1)%phrases.length;last=n;let el=document.createElement('span');el.className='message';el.textContent=phrases[n];el.dataset.icon=icons[Math.floor(Math.random()*icons.length)];let x=20+Math.random()*60,y;if(narrow()){y=32+Math.random()*43;x=30+Math.random()*40}else{y=33+Math.random()*42}if(phrases[n].length>18)x=50;el.style.setProperty('--x',x+'%');el.style.setProperty('--y',y+'%');el.style.setProperty('--tilt',(Math.random()*8-4).toFixed(1)+'deg');if(messages.children.length>=13)messages.firstElementChild.remove();messages.appendChild(el);showFirework(x,y);el.addEventListener('animationend',()=>{el.remove();fallFlower(x,y)},{once:true})}
     function shower(){clearInterval(timer);const run=++sequence;prompt.classList.add('hide');for(let i=0;i<4;i++)setTimeout(showPhrase,i*400);timer=setInterval(showPhrase,850);setTimeout(()=>{if(sequence===run){clearInterval(timer);timer=setInterval(showPhrase,1300)}},6500)}
-    document.getElementById('replay').addEventListener('click',e=>{e.stopPropagation();shower()});scene.addEventListener('click',e=>{if(e.target.closest('button'))return;showPhrase();setTimeout(showPhrase,180)});setTimeout(shower,1250);
+    const letterOverlay=document.getElementById('letterOverlay');
+    const letterStage=document.getElementById('letterStage');
+    const letterPaper=document.getElementById('letterPaper');
+    const letterContent=document.getElementById('letterContent');
+    const openEnvelopeButton=document.getElementById('openEnvelope');
+    const closeLetterButton=document.getElementById('closeLetter');
+    const milestoneLetters={10:'first',20:'photos',30:'third'};
+    let tapCount=0,activeLetter=null,pendingLetter=null,returnFocus=null;
+    function revealEnvelope(kind){
+      activeLetter=kind;pendingLetter=kind;returnFocus=document.activeElement;
+      letterStage.hidden=false;letterPaper.hidden=true;letterContent.replaceChildren();
+      letterOverlay.hidden=false;openEnvelopeButton.focus();
+    }
+    function countTap(){
+      if(pendingLetter){revealEnvelope(pendingLetter);return true}
+      tapCount++;
+      if(milestoneLetters[tapCount]){revealEnvelope(milestoneLetters[tapCount]);return true}
+      return false;
+    }
+    function openLetter(){
+      pendingLetter=null;letterStage.hidden=true;letterPaper.hidden=false;
+      if(activeLetter==='photos'){
+        const gallery=document.createElement('div');gallery.className='photo-gallery';
+        for(let i=1;i<=9;i++){
+          const figure=document.createElement('figure');
+          const photo=document.createElement('img');
+          photo.src=`photos/memory-${String(i).padStart(2,'0')}.jpg`;
+          photo.alt=`相册照片 ${i}`;photo.loading='lazy';photo.decoding='async';
+          figure.appendChild(photo);gallery.appendChild(figure);
+        }
+        letterContent.appendChild(gallery);
+      }else{
+        const message=document.createElement('p');message.className='letter-message';
+        if(activeLetter==='first')message.textContent='很高兴认识你的第17天';
+        else message.append('一定要去遍想去的地方！',document.createElement('br'),'做想做的事情！');
+        letterContent.appendChild(message);
+        if(activeLetter==='first'){
+          const signature=document.createElement('p');signature.className='letter-signature';
+          signature.textContent='汪欣骏';letterContent.appendChild(signature);
+        }
+      }
+      letterPaper.scrollTop=0;closeLetterButton.focus();
+    }
+    function closeLetter(){
+      letterOverlay.hidden=true;letterPaper.hidden=true;letterStage.hidden=false;
+      letterContent.replaceChildren();if(returnFocus?.focus)returnFocus.focus();
+    }
+    openEnvelopeButton.addEventListener('click',openLetter);
+    closeLetterButton.addEventListener('click',closeLetter);
+    letterOverlay.addEventListener('click',e=>{if(e.target===letterOverlay)closeLetter()});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!letterOverlay.hidden)closeLetter()});
+    document.getElementById('replay').addEventListener('click',e=>{e.stopPropagation();if(!countTap())shower()});
+    scene.addEventListener('click',e=>{if(e.target.closest('button'))return;if(countTap())return;showPhrase();setTimeout(showPhrase,180)});
+    setTimeout(shower,1250);
   </script>
 </body>
 </html>
